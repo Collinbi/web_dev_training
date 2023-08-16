@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form, Tables, List</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Sex</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Judith</td>
+          <td>22</td>
+          <td>Female</td>
+        </tr>
+        <tr>
+          <td>Ebuka</td>
+          <td>27</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>Ebube</td>
+          <td>17</td>
+          <td>Female</td>
+        </tr>
+        <tr>
+          <td>Chizzy</td>
+          <td>9</td>
+          <td>male</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+
+    <list>
+      <caption>
+        Testing list
+      </caption>
+      <ul>
+        <li>Food</li>
+        <ol>
+          <li>Rice</li>
+          <li>Beans</li>
+          <li>egg</li>
+        </ol>
+        <li>Vegetable</li>
+        <ol>
+          <li>Bitter leaf</li>
+          <li>Scent leave</li>
+          <li>Curry leave</li>
+        </ol>
+        <li>Animals</li>
+        <ol>
+          <li>Dog</li>
+          <li>Cat</li>
+          <li>Lion</li>
+        </ol>
+      </ul>
+    </list>
+
+    <form>
+      <label for="Email">Enter Email:</label><br />
+      <input type="email" id="name" placeholder="Email" /><br />
+
+      <label for="Password">Enter Password</label><br />
+      <input type="password" id="Password" placeholder="Password" /><br />
+      <caption>
+        Education Background
+      </caption>
+      <br />
+      <label for="Primary">Primary School</label>
+      <input type="checkbox" id="Primary" />
+      <label for="Secondary">Secondary School</label>
+      <input type="checkbox" id="Secondary" />
+      <label for="Tertiary">Tertiary School</label>
+      <input type="checkbox" id="Tertiary" /><br />
+
+      <br />
+      <fieldset>
+        <legend>Employment status</legend>
+        <input type="radio" id="student" name="status" value="Student" />
+        <label for="student">A Student</label><br />
+        <input type="radio" id="worker" name="status" value="worker" />
+        <label for="worker">A Worker</label>.
+      </fieldset>
+    </form>
+  </body>
+</html>

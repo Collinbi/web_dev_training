@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Assignment 2</title>
+    <link rel="stylesheet" href="./Assignment1.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <main class="main">
+          <div class="form_wrapper">
+            <header class="heading_wrapper">
+              <h2>Registration Form</h2>
+            </header>
+            <form class="form">
+              <div class="form_input_wrap">
+                <div class="input_wrap">
+                  <label for="f_name">First Name</label>
+                  <input type="text" name="f_name" id="f_name" />
+                </div>
+                <div class="input_wrap">
+                  <label for="l_name">Last Name</label>
+                  <input type="text" name="l_name" id="l_name" />
+                </div>
+              </div>
+
+              <div class="form_input_wrap">
+                <div class="input_wrap">
+                  <label for="b_day">Birthday</label>
+                  <input type="datetime" name="b_day" id="b_day" />
+                </div>
+
+                <div class="input_wrap gender">
+                  <label for="gender">Gender</label>
+                <div class="input_wrap_radio">
+                  <!-- <span> -->
+
+                    <input type="radio" name="gender" value="Male" /><small
+                      >Male</small
+                    >
+                  <!-- </span> -->
+                  <!-- <span> -->
+                    
+                    <input type="radio" name="gender" value="Female" /><small
+                      >Female</small>
+                  <!-- </span> -->
+
+                </div>
+                </div>
+              </div>
+
+              <div class="form_input_wrap">
+                <div class="input_wrap">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+                <div class="input_wrap">
+                  <label for="p_number">Phone Number</label>
+                  <input type="tel" name="p_number" id="p_number" />
+                </div>
+              </div>
+              <div class="form_input_wrap">
+                <div class="input_wrap subject">
+                  <label for="subjects">Subject</label>
+                  <select
+                  id="subjects"
+                  name="subjects"
+                  title="Choose option"
+                >
+                  <option value="choose_option">Choose Option</option>
+                  <option value="chemistry">Chemistry</option>
+                  <option value="maths">Maths</option>
+                  <option value="english">English</option>
+                  <option value="biology">Biology</option>
+                  <option value="history">History</option>
+                  <option value="geography">Geography</option>
+                </select>
+            </div>
+            </div>
+
+              <div class="btn">
+
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

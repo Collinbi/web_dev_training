@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px auto;
+        padding: 0px;
+      }
+
+      .wrapper {
+        background-image: url(/weekTwo/dayTwo/img_1.jpg);
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+      }
+      .inp_1 {
+        background-color: dimgrey;
+        margin: auto;
+        width: 50%;
+        height: 10vh;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form action="http://www.example.com/profile.php">
+        <div class="inp_1">
+          Please select your favorite genre:
+          <br />
+          <input
+            type="radio"
+            id="rock"
+            name="genre"
+            value="rock"
+            checked="checked"
+          />
+          <label for="rock">Rock</label>
+          <input type="radio" id="pop" name="genre" value="pop" />
+          <label for="pop">Pop</label>
+          <input type="radio" id="jazz" name="genre" value="jazz" />
+          <label for="jazz">Jazz</label><br />
+        </div>
+
+        <div class="inp_1">
+          <p>Please select your favorite music service(s):</p>
+          <br />
+          <input
+            type="checkbox"
+            name="service"
+            value="itunes"
+            checked="checked"
+          />
+          <label for="itunes">iTunes</label>
+          <input type="checkbox" id="last_fm" name="service" value="lastfm" />
+          <label for="last_fm">Last.fm</label>
+          <input type="checkbox" id="spotify" name="service" value="spotify" />
+          <label for="spotify">Spotify</label>
+        </div>
+        <div class="inp_2">
+          <p>choose the device you listen to music on?</p>
+          <label for="devices">Select a device</label>
+          <select name="devices" id="devices">
+            <option value="ipod">iPod</option>
+            <option value="radio">Radio</option>
+            <option value="computer">Computer</option>
+          </select>
+        </div>
+        <div class="Check_1">
+          <p>
+            Do you play any of the following instruments? (You can select more
+            than one option by holding down control on a PC or command key on a
+            Mac while selecting different options.)
+          </p>
+          <label for="instruments">Select instruments</label><br />
+          <select
+            name="instruments"
+            id="instruments"
+            size="2"
+            multiple="multiple"
+          >
+            <option value="guitar" selected="selected">Guitar</option>
+            <option value="drums">Drums</option>
+            <option value="keyboard" selected="selected">Keyboard</option>
+            <option value="bass">Bass</option>
+          </select>
+        </div>
+        <br />
+        <div class="up_1">
+          <label for="user_song">Upload your song in MP3 format:</label>
+          <input type="file" id="user_song" name="user-song" /><br />
+          <input type="submit" value="Upload" />
+        </div>
+        <br />
+        <div class="inp_3">
+          <label for="date">Departure date:</label>
+          <input type="date" id="date" name="depart" />
+          <input type="submit" value="Submit" />
+        </div>
+        <br />
+        <div class="srch_1">
+          <label for="search">Search:</label>
+          <input type="search" name="search" placeholder="Enter keyword" />
+          <input type="submit" value="Search" />
+        </div>
+        <br />
+        <button>Submit</button>
+      </form>
+
+      <div>
+        <iframe
+          width="400vw"
+          height="300vh"
+          src="http://maps.google.co.uk/maps?q=moma+new+york
+            &amp;output=embed"
+        >
+        </iframe>
+      </div>
+      <br />
+      <footer>
+        <div>
+          <p>Write your comment:</p>
+          <br />
+          <textarea rows="4" cols="50"></textarea>
+        </div>
+        <br />
+
+        © 2019 My Website, All rights reserved.<br />
+      </footer>
+    </div>
+  </body>
+</html>

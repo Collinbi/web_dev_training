@@ -1,0 +1,99 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2a4556;
+  --secondary-color: #e1574c;
+  --white-text: #fbfbf7;
+  --white-bcolor: #fff;
+}
+
+.mn-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--white-bcolor);
+}
+
+.mn-wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mn-header {
+  display: flex;
+  justify-content: center;
+  min-height: 60vh;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.left-header-container {
+  width: 80%;
+  display: flex;
+}
+
+
+.left-header {
+  flex: 1;
+}
+
+.left-top-header {
+  height: 4em;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.left-top-header h4 {
+  font-weight: bold;
+  color: var(--white-text);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.bottom-header {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-left: 3px solid var(--secondary-color);
+}
+
+.bottom-header h2 {
+  color: var(--white-text);
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+
+.bottom-header small {
+  color: var(--white-text);
+  font-size: 1.2rem;
+}
+
+.left_paragraph p {
+  font-size: 0.8rem;
+  color: var(--white-text);
+}
+
+.btn-wrap {
+  margin-top: 1rem;
+}
+
+.btn-wrap button {
+  width: 120px;
+  height: 2em;
+  text-transform: capitalize;
+  background-color: var(--secondary-color);
+  color: var(--white-text);
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px black;
+}
+
+.btn-wrap button:hover {
+  background-color: var(--white-bcolor);
+  color: var(--primary-color);
+}
+
+ 

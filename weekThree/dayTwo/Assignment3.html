@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .main {
+        flex: 0.5;
+        min-height: 70vh;
+        background-color: #252420;
+        border-radius: 10px;
+        padding: 1rem 0rem;
+        min-width: 80vw;
+      }
+
+      .header {
+        display: flex;
+        min-height: 2em;
+        padding: 0rem 1rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+      .h_left strong {
+        font-size: 80px;
+        font-weight: 600px;
+        color: #bc9458;
+      }
+
+      .h_right small {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #bc9458;
+        text-transform: capitalize;
+        font-style: italic;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .digit {
+        font-size: 300px;
+        font-weight: 700px;
+        color: #fff25d;
+      }
+      .content .anniv {
+        transform: translateY(-200%);
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #bc9458;
+        font-size: 2rem;
+        text-shadow: #bc9458 0px 3px 2px;
+        position: relative;
+      }
+
+      .content .anniv::after{
+        content: "";
+        width: 30px;
+        height: 20px;
+        background-color: #bc9458;
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        clip-path: polygon(99% 35%, 1% 36%, 51% 100%);
+
+      }
+      .content .unique {
+        position: relative;
+        bottom: 11.4em;
+        left: 5.6em;
+        color: #bc9458;
+        font-weight: bold;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0rem 1rem;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: #bc9458;
+      }
+      .f_content {
+        display: flex;
+        /* align-items: center; */
+        /* min-width: 100px; */
+        flex-direction: column;
+        /* gap: 10px; */
+        /* flex: 1; */
+      }
+
+      .icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex: 1;
+        color: #bc9458;
+        /* background-color: aqua; */
+        min-width: 100;
+        justify-content: center;
+      }
+
+      .f_content span:first-child {
+        text-transform: capitalize;
+      }
+
+      .f_content span {
+        font-size: 1rem;
+        color: #bc9458;
+      }
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <header class="header">
+          <span class="h_left"><strong>oraimo</strong></span>
+          <span class="h_right"><small>Keep Exploring</small></span>
+        </header>
+        <section class="content">
+          <strong class="digit">10</strong>
+          <span class="unique">YEARS</span><br />
+          <span class="anniv">ANNIVERSARY</span>
+        </section>
+        <footer class="footer">
+          <div class="icon">
+            <span><i class="fas fa-yin-yang fa-spin fa-lg icon"></i></span>
+            <div class="f_content">
+              <span>Sold in 50+</span>
+              <span>Counties</span>
+            </div>
+          </div>
+          <div class="icon">
+            <span><i class="fas fa-yin-yang fa-spin fa-lg icon"></i></span>
+            <div class="f_content">
+              <span>Trusted by</span>
+              <span>200 Million+ Users</span>
+            </div>
+          </div>
+          <div class="icon">
+            <span><i class="fas fa-yin-yang fa-spin fa-lg icon"></i></span>
+            <div class="f_content">
+              <span>Premium Quality with</span>
+              <span>365-Day Warranty</span>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
